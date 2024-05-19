@@ -4,7 +4,7 @@ Arttu Yli-Kujala, Aaro Esko and Eeva-kaisa Kohonen
 ## Preview
 
 ## 3D modelling
-![](img/stronghold-logo-left.png)
+![GIF demo](3D model/videos/1.gif)
 
 ## Schematics
 

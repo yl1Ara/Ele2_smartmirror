@@ -7,5 +7,5 @@ This file contains the data sent to the esp32s2. Most library data is not includ
 that can then be changed in the library file if you want to use same schematic configuration for pin layout
 
 
-Made by,
-Arttu Yli-Kujala
+Made by, 
+( ͡° ͜ʖ ͡°) tech. Chief of 3d modelling, schematics and MCU coding Arttu Yli-Kujala

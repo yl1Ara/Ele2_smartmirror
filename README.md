@@ -1,4 +1,4 @@
-Arttu Yli-Kujala, Aaro Esko and Eeva-kaisa Kohonen
+Arttu Yli-Kujala, Aaro Esko and Eeva-Kaisa Kohonen
 # ( ͡° ͜ʖ ͡°) tech. Smart Mirror
 
 ## Preview

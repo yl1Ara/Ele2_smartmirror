@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en"  class="theme-light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Screen control hub</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='styleO.css') }}">
+</head>
+<body>
+
+    <!---
+<div class="info-box-main">
+  <h2>Info Screen</h2>
+  <div class="weather">
+    <div class="icon">&#9729;</div>
+    <span id="weatherText">Weather: Sunny, 25°C</span>
+  </div>
+  <div class="transport">
+    <span id="transportText">Public Transport: No delays reported</span>
+  </div>
+  <div class="notes">
+    <h3>Notes:</h3>
+    <ul id="notesList">
+      <li>Meeting at 2:00 PM</li>
+      <li>Buy groceries on the way home</li>
+    </ul>
+  </div>
+</div>
+
+-->
+
+
+
+<div class="info-box-main">
+  <h1>Screen control hub</h1>
+</div>
+
+
+
+
+
+
+<div class="info-box">
+  <h2>Your public transportation stop</h2>
+  <div class="content inputs">
+
+    <h3>Enter your public transportation stop name to and choose specific stop to follow from the list</h3>
+    <form id="dataForm">
+      <label for="dataInput"></label>
+      <input type="text" id="dataInput" name="dataInput" placeholder="e.g Kumpulan kampus">
+      <button type="submit">Get list of stops</button>
+    </form>
+    <label for="responseDropdown">Stops:</label>
+    <select id="responseDropdown"></select>
+    <button id="submitButton" type="button">Submit</button>
+    <div id="serverResponseDepartures"></div>
+  </div>
+</div>
+
+
+<div class="info-box">
+  <h2>Temperature and humidity</h2>
+  <div id="DHT-data-section"></div>
+
+
+</div>
+
+
+
+
+
+<div class="info-box">
+  <h2>Submit a Note</h2>
+  <div class="message-form">
+    <form id="messageForm">
+      <label for="messageInput">Your note:</label>
+      <textarea id="messageInput" name="messageInput" rows="4"  maxlength="25" placeholder="Type your note here (max. length 19 chars.)..."></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+
+
+<div class="date-time-picker">
+    <h2>Submit alarm</h2>
+    <p> Maximum of 3 alarms at once </p>
+    <div class="date-time-picker-row">
+    <label for="year">Year:</label>
+    <select class="year" id="year"></select>
+    <label for="month">Month:</label>
+    <select class="month" id="month"></select>
+    <label for="day">Day:</label>
+    <select class="day" id="day"></select>
+    </div>
+    <div class="date-time-picker-row">
+    <label for="hour">Hour:</label>
+    <select class="hour" id="hour"></select>
+    <label for="minute">Minute:</label>
+    <select class="minute" id="minute"></select>
+    </div>
+
+  <div id=show_date></div>
+  <button class="submit-btn">Submit</button>
+  <button class="remove-all-btn">Remove All Alarms</button>
+</div>
+
+
+<div class="container">
+<div class="info-box theme-selector">
+  <h2>Theme Selector</h2>
+  <button id="switch" onclick="toggleTheme()">Switch</button>
+  </div>
+</div>
+</div>
+
+
+
+
+
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+<script src="{{ url_for('static', filename='calendarscript.js') }}"></script>
+
+
+<footer>
+  <p>&copy; ( ͡° ͜ʖ ͡°) Solutions 2024. All rights reserved.</p>
+  <p> Aaro Esko, Eeva-Kaisa Kohonen, Arttu Yli-kujala.</p>
+  <a href="/logout"><button>Logout</button></a>
+</footer>
+
+</body>
+</html>

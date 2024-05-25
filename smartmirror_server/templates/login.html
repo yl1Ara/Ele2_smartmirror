@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styleO.css"> <!-- Include your main CSS file -->
+    <style>
+        /* Add your custom styles here */
+        /* Define your light and dark themes */
+        .theme-light {
+            --color-primary: #868282;
+            --color-secondary: #ffffff9f;
+            --color-accent: #fd6f53;
+            --font-color: #000000;
+        }
+
+        .theme-dark {
+            --color-primary: #000000;
+            --color-secondary: #2e2e2e;
+            --color-accent: #3a3a3a;
+            --font-color: #ffffff;
+        }
+
+        /* Apply general body styles */
+        body {
+            background-color: var(--color-primary);
+            color: var(--font-color);
+        }
+
+        /* Apply styles to the login container */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: monospace;
+            color: var(--font-color);
+            background-color: var(--color-secondary);
+            border-radius: 10px;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 400px;
+            overflow: hidden;
+        }
+
+        /* Apply styles to headings */
+        h1 {
+            margin-top: 0;
+            font-size: 24px;
+        }
+
+        /* Apply styles to form inputs */
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 22px); /* Adjust width as needed */
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Apply styles to the login button */
+        input[type="submit"],
+        .skip-login {
+            width: 100%;
+            background-color: var(--color-accent);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+
+        input[type="submit"]:hover,
+        .skip-login:hover {
+            background-color: #e85d42;
+        }
+
+        /* Apply styles to error messages */
+        .error {
+            color: red;
+        }
+
+        /* Apply margin to the bottom of the form */
+        form {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Please Login</h1>
+        <form id="loginForm" action="" method="post">
+            <input type="text" placeholder="Username" name="username" id="usernameField">
+            <input type="password" placeholder="Password" name="password" id="passwordField">
+            <input class="btn btn-default" type="submit" value="Login">
+        </form>
+      <!--  <button id="demoLogin" class="skip-login">AUTO LOGIN FOR DEMO</button>
+        {% if error %}
+        <p class="error"><strong>Error:</strong> {{ error }}
+            {% endif %} -->
+    </div>
+
+   <!-- <script>
+        // JavaScript code to submit hardcoded credentials on button click
+        document.getElementById("demoLogin").addEventListener("click", function() {
+            // Hardcoded credentials
+            var hardcodedUsername = "admin";
+            var hardcodedPassword = "admin";
+
+            // Set the values of the username and password fields
+            document.getElementById("usernameField").value = hardcodedUsername;
+            document.getElementById("passwordField").value = hardcodedPassword;
+
+            // Submit the form
+            var form = document.getElementById("loginForm");
+            form.submit();
+        });
+    </script>  -->
+</body>
+
+</html>

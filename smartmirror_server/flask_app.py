@@ -42,7 +42,7 @@ def login_required(f):
 def login():
     error = None
     if request.method == 'POST':
-        if request.form['username'] != 'fresh' or request.form['password'] != 'air': #requiring password from the client with a html form, hardcoding not the best way to do it
+        if request.form['username'] != 'usernam' or request.form['passwor'] != 'air': #requiring password from the client with a html form, hardcoding not the best way to do it
             error = 'Invalid Credentials. Please try again.'
         else:
             session['logged_in']=True

@@ -2,7 +2,9 @@ Arttu Yli-Kujala, Aaro Esko and Eeva-Kaisa Kohonen
 # ( ͡° ͜ʖ ͡°) tech. Smart Mirror
 
 ## Preview
+The final_doc.pdf is the final documentation. It should be installed so all the links and \refs work
 
+## Contribution
 ![GIF demo](contributions.png)
 
 

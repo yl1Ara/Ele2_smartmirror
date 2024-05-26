@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="styleO.css"> <!-- Include your main CSS file -->
+    <link rel="stylesheet" href="styleO.css"> 
     <style>
-        /* Add your custom styles here */
-        /* Define your light and dark themes */
+
         .theme-light {
             --color-primary: #868282;
             --color-secondary: #ffffff9f;
@@ -23,13 +22,13 @@
             --font-color: #ffffff;
         }
 
-        /* Apply general body styles */
+
         body {
             background-color: var(--color-primary);
             color: var(--font-color);
         }
 
-        /* Apply styles to the login container */
+
         .container {
             display: flex;
             flex-direction: column;
@@ -46,23 +45,22 @@
             overflow: hidden;
         }
 
-        /* Apply styles to headings */
+
         h1 {
             margin-top: 0;
             font-size: 24px;
         }
 
-        /* Apply styles to form inputs */
+
         input[type="text"],
         input[type="password"] {
-            width: calc(100% - 22px); /* Adjust width as needed */
+            width: calc(100% - 22px); 
             padding: 10px;
             margin-bottom: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
 
-        /* Apply styles to the login button */
         input[type="submit"],
         .skip-login {
             width: 100%;
@@ -81,12 +79,11 @@
             background-color: #e85d42;
         }
 
-        /* Apply styles to error messages */
+
         .error {
             color: red;
         }
 
-        /* Apply margin to the bottom of the form */
         form {
             margin-bottom: 30px;
         }
@@ -101,24 +98,23 @@
             <input type="password" placeholder="Password" name="password" id="passwordField">
             <input class="btn btn-default" type="submit" value="Login">
         </form>
-      <!--  <button id="demoLogin" class="skip-login">AUTO LOGIN FOR DEMO</button>
-        {% if error %}
-        <p class="error"><strong>Error:</strong> {{ error }}
-            {% endif %} -->
+
     </div>
 
    <!-- <script>
-        // JavaScript code to submit hardcoded credentials on button click
+
+        During demo we had this part for quick login
+    
         document.getElementById("demoLogin").addEventListener("click", function() {
-            // Hardcoded credentials
+            //
             var hardcodedUsername = "admin";
             var hardcodedPassword = "admin";
 
-            // Set the values of the username and password fields
+           // Gets the elements and inserts the hardcoded values into the form 
             document.getElementById("usernameField").value = hardcodedUsername;
             document.getElementById("passwordField").value = hardcodedPassword;
 
-            // Submit the form
+            // Submits the form automatically
             var form = document.getElementById("loginForm");
             form.submit();
         });

@@ -6,7 +6,7 @@
   #include <WiFi.h>
   #include <HTTPClient.h> // these two are basic libraries to get API requests to work on esp32s2
   #include <Arduino_JSON.h> // The API that we get from server is in json form, so we want to use this library
-  #include <SPI.h> 
+  #include <SPI.h> //This provides support with SPI(Serial Peripheral Interface) devices that in our case is the TFT SPI LCD screen
   #include <TimeLib.h> // We get the clock time from the server and once per boot and the use esp32s2 inner timers to store the data
   //setTime(9, 27, 05, 14, 07, 2015);
 
@@ -143,8 +143,7 @@ int durations[] = {
 };
 
 //DHT11
-  #include <Arduino.h>  // we use these libraries to make DHT11 data gathering to be bit less time consuming, because normally it creates long(~500ns) delays in code
-  #include "DHT_Async.h" //^^^^^^^^^
+  #include "DHT_Async.h" //This is for reading DHT data bit less time consumely than the basic DHT.h library
   #define DHT_SENSOR_TYPE DHT_TYPE_11 
   static const int DHT_SENSOR_PIN = 17;
   DHT_Async dht_sensor(DHT_SENSOR_PIN, DHT_SENSOR_TYPE);

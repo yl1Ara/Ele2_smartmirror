@@ -1,0 +1,48 @@
+
+.date-time-picker {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+
+.date-time-picker-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-time-picker label {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.date-time-picker select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.date-time-picker .submit-btn {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.date-time-picker .submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.date-time-picker select:focus {
+  outline: none;
+}

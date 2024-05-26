@@ -1,7 +1,10 @@
-Arttu Yli-Kujala, Aaro Esko and Eeva-kaisa Kohonen
+Arttu Yli-Kujala, Aaro Esko and Eeva-Kaisa Kohonen
 # ( ͡° ͜ʖ ͡°) tech. Smart Mirror
 
 ## Preview
+
+![GIF demo](contributions.png)
+
 
 ## 3D modelling
 ![GIF demo](3Dmodel/videos/1.gif)
@@ -15,3 +18,4 @@ Arttu Yli-Kujala, Aaro Esko and Eeva-kaisa Kohonen
 ![GIF demo](Schematics_and_PCB/PCB_layout/Topside.png)
 
 ## Server
+

@@ -23,7 +23,7 @@ app = Flask(__name__)
 
 # secret key for signing session cookie, needs to be set for using sessions (cookies)
 # for better security this should not be hardcoded, better way would be using environment variables
-app.secret_key = "m6{NAmE9]a3Lzm~"
+app.secret_key = "secret_key"
 
 # function that acts as decorator to be applied to routes which need to be protected with login
 def login_required(f):
@@ -787,7 +787,7 @@ def get_stop_id(stop_name):
     """
 
     #Subscription token from Digitransit, can be aquired with sign-in
-    subscription_key = '687e4f332f994e9c9678edc8655ff3e7'
+    subscription_key = 'abcd'
 
     #End point of the api request
     #Multiple different one available for different regions and versions
